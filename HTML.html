@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical</title>
+
+    <!-- <script src="ex.js" defer></script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function createPara(){
+            const para = document.createElement("p");
+            para.textContent = "You just clicked a Button";
+            document.body.appendChild(para);
+        }
+        const buttons = document.querySelectorAll("button");
+        for(const button of buttons){
+            button.addEventListener("click", createPara)
+        }
+        })
+        
+    </script>
+</head>
+<body>
+    <!-- <p>Payer 1: chris</p> -->
+    <button>Click Me</button>
+    <button>Click Me1</button>
+</body>
+</html>
